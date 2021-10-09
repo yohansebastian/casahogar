@@ -131,22 +131,58 @@
 	<section class="fondoAplicacion">
 	</section>
 	<section>
-		<div class="container">
-			<div class="row d-flex justify-content-start">
-				<div class="col col-6">
-					<img src="<?= base_url('public/img/refugio.jpg') ?>" class="img-fluid w-100">
+		<div class="container mb-5">
+			<div class="row mt-5">
+				<div class="col-12 col-md-6">
+					<img src="<?= base_url('public/img/refugio.jpg') ?>" class="img-fluid w-100 rounded">
 				</div>
-				<div class="col-4 text-center">
+				<div class="col-12 col-md-6 align-self-center">
 					<p>
-					Casa hogar Nuevo Porvenir, atiende desde 1996 animales y fauna silvestre en estado de  abandono, ofreciendo atención integral, además somos fabricantes de comida y accesorios para todo tipo de mascotas.
-					Casa hogar Nuevo Porvenir, atiende desde 1996 animales y fauna silvestre en estado de  abandono, ofreciendo atención integral, además somos fabricantes de comida y accesorios para todo tipo de mascotas.
-					Casa hogar Nuevo Porvenir, atiende desde 1996 animales y fauna silvestre en estado de  abandono, ofreciendo atención integral, además somos fabricantes de comida y accesorios para todo tipo de mascotas.
+					Somos una organización protectora de animales especializada, desde 1996, en la ayuda a perros y gatos maltratados y/o abandonados; una organización española totalmente independiente que no recibe subvenciones de organismos oficiales, empresas ni partidos políticos. Las cuotas de nuestros socios y las donaciones de nuestros simpatizantes permiten que nuestra labor sea sostenible y preservan nuestra libertad de acción. Contamos con un centro veterinario en Medellín abierto al público, que destina sus ingresos íntegramente al cuidado de los animales abandonados, y un centro de acogida en El Espinar.
+						<br>
+						Defendemos el “sacrificio cero”. Esto significa que establecemos una línea muy clara entre “el sacrificio” y “la eutanasia”. Nunca sacrificamos cachorros recién nacidos, ni animales cojos, ciegos, sordos o con enfermedades crónicas que sean tratables. Exclusivamente en caso de enfermedad en fase terminal que produzca un sufrimiento irreversible, se recurre a la eutanasia con toda la dignidad, el respeto y el amor que ellos merecen.
 					</p>
 				</div>
 			</div>
 		</div>
 	</section>
+	
+	<footer class="fondoDos p-5">
 
+		<div class="container-fluid">
+
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<h3 class="fw-bold">Horario de atención:</h3>
+				<p>Lunes a viernes 7:00 am - 3:00 pm / Sábado: 7:00 am - 2:30 pm / Domingos y festivos 8:00 am - 3:00 pm</p>
+				<br>
+				<h3 class="fw-bold">Dirección:</h3>
+				<p>Belén Altavista Calle 8A # 112-82 </p>
+			</div>
+
+			<div class="col-12 col-md-4">
+				<h3 class="fw-bold">Ayudas:</h3>
+				<p>Glosario / Correo remoto  /  Monitoreo y desempeño de uso del sitio web</p>
+				<br>
+				<h3 class="fw-bold">Protección de datos:</h3>
+				<p>Protección de datos personales en el Municipio de Medellín </p>
+			</div>
+
+			<div class="col-12 col-md-4">
+				<h1 class="fw-bold fuente"><span><i class="fas fa-paw"></i></span>Nuevo Porvenir</h1>
+				<br>
+				<i class="fab fa-facebook fa-3x"></i>
+				<i class="fab fa-instagram fa-3x"></i>
+				<i class="fab fa-youtube fa-3x"></i>
+				<br>
+				<p class="mt-4">© 2021 / NIT: 890905211-1 / Código DANE: 05001 / Código Postal: 050015</p>
+				
+			</div>
+		</div>
+
+		</div>
+
+	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
 	</script>
