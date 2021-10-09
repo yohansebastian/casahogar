@@ -21,7 +21,7 @@
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-dark fondo">
 			<div class="container-fluid">
-				<a class="navbar-brand fuente" href="#">
+				<a class="navbar-brand fuente" href="<?= base_url()?>">
 					<i class="fas fa-paw"></i>
 					Nuevo Porvenir
 				</a>
@@ -33,10 +33,11 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active" aria-current="page" href="<?=site_url('/Animales')?>">Registro Animales</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
+							<!-- <a class="nav-link" href="Producto">Registrar Productos</a> -->
+							<a class="nav-link" href="<?=site_url('/Producto')?>">Registrar Productos</a>
 						</li>
 					</ul>
 				</div>
