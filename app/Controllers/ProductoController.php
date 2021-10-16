@@ -17,16 +17,25 @@ class ProductoController extends BaseController
         $descripcion = $this->request->getPost("descripcion");
         $tipo        = $this->request->getPost("tipo");
 
+        // Se aplican validaciones
+
+        if($this->validate('formularioProducto')){
+            echo("Todo correcto");
+        }else{
+            $mensaje= "Falta información para la creación del producto";
+            return redirect()->to(site_url('/Producto'))->with('mensaje',$mensaje);
+        }
+
         // 2. Construir arreglo asosiativo con los datos recibidos 
 
-        $datos = array(
-            "producto"    => $producto,
-            "foto"        => $foto,
-            "precio"      => $precio,
-            "descripcion" => $descripcion,
-            "tipo"        => $tipo
-        );
+        // $datos = array(
+        //     "producto"    => $producto,
+        //     "foto"        => $foto,
+        //     "precio"      => $precio,
+        //     "descripcion" => $descripcion,
+        //     "tipo"        => $tipo
+        // );
 
-        echo var_dump($datos);
+        // echo var_dump($datos);
     }
 }

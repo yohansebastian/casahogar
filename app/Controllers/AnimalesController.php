@@ -16,16 +16,25 @@ class AnimalesController extends BaseController
          $descripcion = $this->request->getPost("descripcion");
          $tipo        = $this->request->getPost("tipo");
  
+         // Se validan los datos
+         if($this->validate('formularioAnimales')){
+            echo("Todo correcto");    
+         }else{
+            $mensaje= "Falta información de los animales";
+            return redirect()->to(site_url('/Animales'))->with('mensaje',$mensaje);
+         }
+
+
          // 2. Construir arreglo asosiativo con los datos recibidos 
  
-         $datos = array(
-             "nombre"      => $nombre,
-             "edad"        => $edad,
-             "fotografia"  => $fotografia,
-             "descripcion" => $descripcion,
-             "tipo"        => $tipo
-         ); 
+        //  $datos = array(
+        //      "nombre"      => $nombre,
+        //      "edad"        => $edad,
+        //      "fotografia"  => $fotografia,
+        //      "descripcion" => $descripcion,
+        //      "tipo"        => $tipo
+        //  ); 
 
-         print_r($datos);
+        //  print_r($datos);
     }
 }
